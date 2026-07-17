@@ -159,7 +159,7 @@ section { padding: 80px 20px; position: relative; max-width: 1100px; margin: 0 a
 .memory-card .toggle-hint { font-size:0.8em; color:#b39bd0; margin-top:4px; }
 
 /* ---- POLAROID GALLERY ---- */
-#gallery { min-height: 600px; position:relative; }
+#gallery { min-height: 750px; position:relative; }
 .polaroid {
   position:absolute; width:160px; background:#fff; padding:10px 10px 30px;
   border-radius:6px; box-shadow: 0 8px 20px rgba(0,0,0,0.18);
@@ -256,6 +256,7 @@ section { padding: 80px 20px; position: relative; max-width: 1100px; margin: 0 a
 }
 
 /* ---- FINAL SURPRISE OVERLAY ---- */
+
 #surpriseOverlay {
   position: fixed; inset:0; background:#0a0a18; z-index: 9500;
   display:none; flex-direction:column; align-items:center; justify-content:center;
@@ -288,7 +289,8 @@ section { padding: 80px 20px; position: relative; max-width: 1100px; margin: 0 a
 @keyframes blink { 50% { opacity:0; } }
 
 .slideshow-wrap {
-  z-index:2; opacity:0; transition: opacity 1.2s ease; max-width: 700px; width:100%;
+  z-index:2; opacity:0; transition: opacity 1.2s ease; max-width: 700px; width:100%;  padding-top: 30px;
+
 }
 .slideshow-wrap.show { opacity:1; }
 .slideshow {
@@ -501,6 +503,11 @@ button:focus-visible, .memory-card:focus-visible, .gift-box:focus-visible {
       <img src="bhu-COLLAGE.jpg" alt="Memory photo strip 5">
       BHU workshop
     </div>
+    <div class="polaroid" style="top:280px; left:55%; transform: rotate(-5deg);">
+      <div class="tape"></div>
+      <img src="outfit_check.jpg" alt="Memory photo strip 6">
+      Recreating outfits with didi
+    </div>
   </div>
 </section>
 
@@ -568,6 +575,8 @@ button:focus-visible, .memory-card:focus-visible, .gift-box:focus-visible {
     <img src="5.jpg" class="slide" alt="Favorite memory 5">
       <img src="6.jpg" class="slide" alt="Favorite memory 6">
       <img src="7.jpg" class="slide" alt="Favorite memory 7">
+      <img src="8.jpg" class="slide" alt="Favorite memory 7">
+
 
     </div>
 
@@ -582,7 +591,7 @@ button:focus-visible, .memory-card:focus-visible, .gift-box:focus-visible {
   <!-- OPTIONAL VIDEO: replace src with your video file (mp4),
        or remove this whole <section> if you don't want it -->
   <video class="trailer-video" controls poster="photos/trailer-poster.jpg">
-    <source src="photos/our-trailer.mp4" type="video/mp4">
+    <source src="video.mp4" type="video/mp4">
     Your browser doesn't support video playback.
   </video>
 </section>
